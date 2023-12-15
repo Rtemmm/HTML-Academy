@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27.24px;
+    color: rgba(48, 48, 50, 1);
+    background-color: rgba(250, 253, 255, 1);
+}
+
+.page {
+    margin-top: 120px;
+    margin-bottom: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    grid-area: title;
+    font-family: 'Playfair Display';
+}
+
+.styl1 {
+    grid-area: styl1;
+}
+
+.big {
+    grid-area: styl2;
+}
+
+.lystra {
+    grid-area: lystra;
+}
+
+.table {
+    grid-area: table;
+}
+
+.cards {
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 36px 30px;
+    grid-template-columns: 270px 270px 270px 270px;
+    grid-template-rows: 289px 289px;
+    grid-template-areas: 
+    "title styl1 styl2 styl2"
+    "lystra table styl2 styl2";
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    justify-content: start;
+}
+
+.card:not(.title) {
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.03);
+}
+
+.card p {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.card b {
+    font-size: 28px;
+    line-height: 38.13px;
+}
+
+.title h1 {
+    font-size: 28px;
+    line-height: 37.32px;
+    position: relative;
+    display: inline-block;
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    height: 4px;
+    width: 50%;
+    background-color: rgba(48, 48, 50, 1);
+}
+
+.big img {
+    padding-bottom: 53px;
+}
